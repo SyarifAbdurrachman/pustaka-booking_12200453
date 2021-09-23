@@ -29,6 +29,11 @@ class BaseController extends Controller
     protected $request;
 
     /**
+     * @var CodeIgniter\Session
+     */
+    protected $session;
+
+    /**
      * An array of helpers to be loaded automatically upon
      * class instantiation. These helpers will be available
      * to all other controllers that extend BaseController.
@@ -47,6 +52,6 @@ class BaseController extends Controller
 
         // Preload any models, libraries, etc, here.
 
-        // E.g.: $this->session = \Config\Services::session();
+        $this->session = \Config\Services::session();
     }
 }
