@@ -13,10 +13,10 @@ class SelamatDatang extends BaseController{
             'vd' => $this->session->getFlashdata('validator'),
             'email' => $this->session->get('email'),
             'sandi' => $this->session->get('sandi'),
+            'error' => $this->session->getFlashdata('error'),
             'title' => 'Login sisfo Perpustakaan'
         ]);
     }
-
     public function daftar_member(){
         return view('halaman/daftar_member');
     }
