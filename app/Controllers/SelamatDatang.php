@@ -27,4 +27,4 @@ class SelamatDatang extends BaseController{
             'sandi' => $this->session->get('sandi')
         ]); 
     }
-}
+} 
