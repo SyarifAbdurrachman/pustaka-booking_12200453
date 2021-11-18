@@ -1,7 +1,7 @@
 <?php
 namespace App\Controllers;
 
-use App\Models\Pengguna;
+use App\Models\Pengguna_12200453;
 use Config\Services;
 
 class Login extends BaseController{
